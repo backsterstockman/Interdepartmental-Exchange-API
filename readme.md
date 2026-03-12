@@ -1,7 +1,8 @@
-    Interdepartmental Exchange API (System B) — LIVE DEMO
+Interdepartmental Exchange API (System B) — LIVE DEMO
 Данный сервис является реализацией Системы Б в рамках протокола межведомственного обмена данными. Приложение имитирует работу реестра банковских гарантий с проверкой цифровых подписей и автоматическим квитированием.
 
-# 🔗 Попробовать API (Swagger UI): https://interdepartmental-exchange-api-production.up.railway.app/docs
+# 🔗 Попробовать API (Swagger UI): 
+https://interdepartmental-exchange-api-production.up.railway.app/docs
 
 # 🛠 Что это и как работает?
 Приложение реализует сложную логику «матрешки», где бизнес-данные (информация о гарантии) упаковываются в сообщение, сообщение — в транзакцию, а транзакция — в транспортный конверт API. На каждом этапе используется Base64-кодирование и контроль целостности.
