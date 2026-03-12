@@ -1,7 +1,7 @@
 Interdepartmental Exchange API (System B) — LIVE DEMO
 Данный сервис является реализацией Системы Б в рамках протокола межведомственного обмена данными. Приложение имитирует работу реестра банковских гарантий с проверкой цифровых подписей и автоматическим квитированием.
 
-🔗 Попробовать API (Swagger UI): [ваша ссылка]/docs
+🔗 Попробовать API (Swagger UI): https://interdepartmental-exchange-api-production.up.railway.app/docs
 
 🛠 Что это и как работает?
 Приложение реализует сложную логику «матрешки», где бизнес-данные (информация о гарантии) упаковываются в сообщение, сообщение — в транзакцию, а транзакция — в транспортный конверт API. На каждом этапе используется Base64-кодирование и контроль целостности.
@@ -26,7 +26,16 @@ Interdepartmental Exchange API (System B) — LIVE DEMO
 Нажмите Try it out.
 
 Вставьте в поле Data следующий поисковый запрос (это Base64-фильтр по датам):
-eyJTdGFydERhdGUiOiAiMjAyMC0wMS0wMVQwMDowMDowMFoiLCAiRW5kRGF0ZSI6ICIyMDI3LTEyLTMxVDIzOjU5OjU5WiIsICJMaW1pdCI6IDEwLCAiT2Zmc2V0IjogMH0=
+
+{
+  "Data": "eyJTdGFydERhdGUiOiAiMjAyMC0wMS0wMVQwMDowMDowMFoiLCAiRW5kRGF0ZSI6ICIyMDI3LTEyLTMxVDIzOjU5OjU5WiIsICJMaW1pdCI6IDEwLCAiT2Zmc2V0IjogMH0=",
+  "Sign": "STUB",
+  "SignerCert": "STUB"
+}
+
+=
+
+В остальные поля можно вставить любые строки
 
 Нажмите Execute. Вы получите список транзакций, включая тестовую гарантию из "Примера 1".
 
