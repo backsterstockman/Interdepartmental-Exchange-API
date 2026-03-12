@@ -27,13 +27,13 @@ Interdepartmental Exchange API (System B) — LIVE DEMO
 
 Вставьте в поле Data следующий поисковый запрос (это Base64-фильтр по датам):
 
-'''
+```
 {
   "Data": "eyJTdGFydERhdGUiOiAiMjAyMC0wMS0wMVQwMDowMDowMFoiLCAiRW5kRGF0ZSI6ICIyMDI3LTEyLTMxVDIzOjU5OjU5WiIsICJMaW1pdCI6IDEwLCAiT2Zmc2V0IjogMH0=",
   "Sign": "STUB",
   "SignerCert": "STUB"
 }
-'''
+```
 
 Нажмите Execute. Вы получите список транзакций, включая тестовую гарантию из "Примера 1".
 
@@ -46,13 +46,13 @@ Interdepartmental Exchange API (System B) — LIVE DEMO
 
 Чтобы не вычислять хэш вручную, используйте этот готовый пакет:
 
-'''
+```
 {
   "Data": "eyJUcmFuc2FjdGlvbnMiOiBbeyJUcmFuc2FjdGlvblR5cGUiOiA5LCAiRGF0YSI6ICJleUpKWW01dmJtVjBkV0ZzYVhSNVpDSTZNakF4TENKSmJtTm9iV1Z6Y21GaGRHVnpaVDBpVjlsZFlXUmhJR2RoY21GdWRHbGxJam9nSWpBZ2V3PT0iLCAiSGFzaCI6ICJCOEUxMEY2OTVEOUQ3RERCOENBODFDRUNBOTBDRjg0RTQwOTJGMThBQjAzNTM5OThFNDBBRkRBMTBGMzQxODAxIiwgIlNpZ24iOiAiUWpneU1UQUdOalkxUkRreVJFUkNRME5CT0VGRE5VTkJPVEJEUmpnME5VUTFNbVl6T0VFeU16VXpPVGhoT0VSR1JFUkJNVEJHTXpReE9EQXhJZz09IiwgIlNpZ25lckNlcnQiOiAiU1RVQiIsICJUcmFuc2FjdGlvblRpbWUiOiAiMjAyNC0wNS0yMFQxMDowMDowMFoifV0sICJDb3VudCI6IDF9",
   "Sign": "STUB",
   "SignerCert": "STUB"
 }
-'''
+```
 
 Нажмите Execute. В ответ сервис вернет вам сгенерированный квиток подтверждения.
 
